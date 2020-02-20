@@ -4,7 +4,6 @@
 
 ### Screenshot
 
-[Live View](https://react-calculator2020.herokuapp.com/)
 ![screenshot](./dist/img/desktop.png)
 
 React calculator project.
@@ -21,7 +20,7 @@ React calculator project.
 
 ## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://react-calculator2020.herokuapp.com/)
 
 ## Getting Started
 
