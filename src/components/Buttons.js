@@ -1,49 +1,40 @@
 /* eslint-disable react/require-default-props */
 /* eslint-disable react/default-props-match-prop-types */
 import React from 'react';
+import Button from './button';
 
-const ButtonPanel = () => {
-  const styles = { backgroundColor: 'white', width: '25%' };
-
-
-  return (
-    <div>
-      <div id="group-1">
-        <button type="button" style={styles}>AC</button>
-        <button type="button" style={styles}>+/-</button>
-        <button type="button" style={styles}>%</button>
-        <button type="button" style={styles}>+</button>
-      </div>
-      <div id="group-2">
-        <button type="button" style={styles}>1</button>
-        <button type="button" style={styles}>2</button>
-        <button type="button" style={styles}>3</button>
-        <button type="button" style={styles}>-</button>
-      </div>
-      <div id="group-3">
-        <button type="button" style={styles}>4</button>
-        <button type="button" style={styles}>5</button>
-        <button type="button" style={styles}>6</button>
-        <button type="button" style={styles}>*</button>
-      </div>
-      <div id="group-4">
-        <button type="button" style={styles}>7</button>
-        <button type="button" style={styles}>8</button>
-        <button type="button" style={styles}>9</button>
-        <button type="button" style={styles}>/</button>
-      </div>
-      <div id="group-5">
-        <button type="button" style={styles}>0</button>
-        <button type="button" style={styles}>.</button>
-        <button type="button" style={styles}>=</button>
-      </div>
+const ButtonPanel = () => (
+  <div>
+    <div id="group-1">
+      <Button name="AC" Color="gray" />
+      <Button name="+/-" Color="gray" />
+      <Button name="%" Color="gray" />
+      <Button name="+" />
     </div>
-  );
-};
-ButtonPanel.defaultProps = {
-  name: 'Mephisto',
-  Color: 'Orange',
-  Width: false,
-};
+    <div id="group-2">
+      <Button name="1" Color="gray" />
+      <Button name="2" Color="gray" />
+      <Button name="3" Color="gray" />
+      <Button name="-" />
+    </div>
+    <div id="group-3">
+      <Button name="4" Color="gray" />
+      <Button name="5" Color="gray" />
+      <Button name="6" Color="gray" />
+      <Button name="/" />
+    </div>
+    <div id="group-4">
+      <Button name="7" Color="gray" />
+      <Button name="8" Color="gray" />
+      <Button name="9" Color="gray" />
+      <Button name="*" />
+    </div>
+    <div id="group-5">
+      <Button name="0" Color="gray" Width />
+      <Button name="." Color="gray" />
+      <Button name="=" Color="gray" />
+    </div>
+  </div>
+);
 
 export default ButtonPanel;
