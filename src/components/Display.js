@@ -6,10 +6,9 @@ const Display = props => {
   const { result } = props;
   return (
     <div id="result-container">
-      <h3>
-        Im Display Result Component:
+      <p id="text-result">
         {result}
-      </h3>
+      </p>
     </div>
   );
 };
