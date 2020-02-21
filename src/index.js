@@ -5,4 +5,4 @@ import './assets/index.css';
 
 
 const targetNode = document.getElementById('root');
-ReactDOM.render(<App/>,targetNode);
+ReactDOM.render(<App />, targetNode);
