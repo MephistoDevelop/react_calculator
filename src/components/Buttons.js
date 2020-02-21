@@ -15,19 +15,19 @@ const ButtonPanel = () => (
       <Button name="1" Color="gray" />
       <Button name="2" Color="gray" />
       <Button name="3" Color="gray" />
-      <Button name="+" />
+      <Button name="-" />
     </div>
     <div id="group-3">
       <Button name="4" Color="gray" />
       <Button name="5" Color="gray" />
       <Button name="6" Color="gray" />
-      <Button name="+" />
+      <Button name="/" />
     </div>
     <div id="group-4">
       <Button name="7" Color="gray" />
       <Button name="8" Color="gray" />
       <Button name="9" Color="gray" />
-      <Button name="+" />
+      <Button name="*" />
     </div>
     <div id="group-5">
       <Button name="0" Color="gray" Width />

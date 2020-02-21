@@ -12,7 +12,7 @@ const Button = props => {
     styles = { backgroundColor: props.Color, width: '25%', heigth: '100px' };
   }
   return (
-    <input type="button" style={styles} value={ButtonName} />
+    <input type="button" className="button" style={styles} value={ButtonName} />
   );
 };
 
