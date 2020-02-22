@@ -4,7 +4,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Button = props => {
+const Button = (props) => {
   const ButtonName = props.name;
   return (
     <input type="button" className="button" value={ButtonName} />
