@@ -6,15 +6,13 @@ const Display = (props) => {
   const { result } = props;
   return (
     <div id="result-container">
-      <p id="text-result">
-        {result}
-      </p>
+      <p id="text-result">{result}</p>
     </div>
   );
 };
 
 Display.defaultProps = {
-  result: 0,
+  result: '0',
 };
 Display.propTypes = {
   result: PropTypes.string,
