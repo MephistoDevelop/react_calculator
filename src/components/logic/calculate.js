@@ -19,7 +19,7 @@ const Calculated = (calculator, ButtonName) => {
   }
   if (ButtonName === 'AC') {
     calculus.value = '';
-    calculus.total = '';
+    calculus.total = '0';
     calculus.operation = '';
   }
   if (ButtonName === '=' && calculus.total !== '' && calculus.value !== '') {
@@ -27,7 +27,6 @@ const Calculated = (calculator, ButtonName) => {
     calculus.value = '';
     calculus.operation = '';
   }
-  console.log(`im Calculus: ${JSON.stringify(calculator)}`);
   return calculus;
 };
 

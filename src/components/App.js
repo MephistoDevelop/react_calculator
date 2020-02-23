@@ -1,3 +1,4 @@
+/* eslint-disable react/destructuring-assignment */
 /* eslint-disable react/no-unused-state */
 /* eslint-disable import/extensions */
 /* eslint-disable class-methods-use-this */
@@ -24,9 +25,10 @@ class App extends React.Component {
   }
 
   render() {
+    const displayNumber = this.state.value === '' ? this.state.total : this.state.value;
     return (
       <div id="calculator-container">
-        <Display result="10" />
+        <Display result={displayNumber.toString()} />
         <ButtonPanel clickHandler={this.handleClick} />
       </div>
     );
