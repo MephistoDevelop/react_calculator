@@ -1,9 +1,10 @@
+/* eslint-disable import/extensions */
 /* eslint-disable class-methods-use-this */
 /* eslint-disable react/prefer-stateless-function */
 import React from 'react';
 import Display from './Display';
 import ButtonPanel from './ButtonPanel';
-import Calculate from './logic/calculate';
+import Calculated from './logic/calculate';
 
 class App extends React.Component {
   constructor(props) {
@@ -13,8 +14,9 @@ class App extends React.Component {
 
 
   handleClick(ButtonName) {
+    const calculate = Calculated;
     console.log(`Button :${ButtonName}`);
-    // Calculate.Calculated();
+    Calculated('', ButtonName);
     // this.setState((state) => Calculate(state, ButtonName));
   }
 
