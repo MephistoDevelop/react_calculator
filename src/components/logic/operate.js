@@ -17,7 +17,7 @@ const Operate = (nOne, nTwo, operation) => {
     Total = Big(parseFloat(nOne) * parseFloat(nTwo));
   }
   if (operation === '%') {
-    Total = Big(parseFloat(nOne) % parseFloat(nOne));
+    Total = Big(parseFloat(nOne) % parseFloat(nTwo));
   }
   return Total;
 };

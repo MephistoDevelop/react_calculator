@@ -6,7 +6,8 @@ const Calculated = (calculator, ButtonName) => {
     const number = ButtonName;
     calculus.value += number;
   }
-  if (['+', '-', '*', '/', '%'].includes(ButtonName)) {
+  if (['+', '-', '*', '/', '%'].includes(ButtonName) && calculator.value !== '') {
+    console.log(calculator.value);
     calculus.total = calculus.value;
     calculus.operation = ButtonName;
     calculus.value = '';
