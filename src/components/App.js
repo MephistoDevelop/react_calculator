@@ -5,6 +5,7 @@ import React from 'react';
 import Display from './Display';
 import ButtonPanel from './ButtonPanel';
 import Calculated from './logic/calculate';
+import Operate from './logic/operate';
 
 class App extends React.Component {
   constructor(props) {
@@ -12,11 +13,11 @@ class App extends React.Component {
     this.handleClick = this.handleClick.bind(this);
   }
 
-
   handleClick(ButtonName) {
     const calculate = Calculated;
     console.log(`Button :${ButtonName}`);
     Calculated('', ButtonName);
+    Operate(1, 2, ButtonName);
     // this.setState((state) => Calculate(state, ButtonName));
   }
 
