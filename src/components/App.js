@@ -21,16 +21,16 @@ class App extends React.Component {
   }
 
   handleClick(ButtonName) {
-    this.setState((state) => {
-      Calculated(state, ButtonName);
-    });
+    this.setState((state) => Calculated(state, ButtonName));
   }
 
   render() {
     const displayNumber = this.state.value === '' ? this.state.total : this.state.value;
+    const displayString = displayNumber.toString();
+    const operator = this.state.operation !== '' ? `${this.state.total}  ${this.state.operation} ${this.state.value}` : displayString;
     return (
       <div id="calculator-container">
-        <Display result={displayNumber.toString()} />
+        <Display result={operator} />
         <ButtonPanel clickHandler={this.handleClick} />
       </div>
     );

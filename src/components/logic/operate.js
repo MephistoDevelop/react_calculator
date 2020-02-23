@@ -1,5 +1,5 @@
 /* eslint-disable radix */
-import { Big } from 'big';
+import { Big } from 'big.js';
 
 const Operate = (nOne, nTwo, operation) => {
   let Total = '';
