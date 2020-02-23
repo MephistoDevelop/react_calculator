@@ -3,6 +3,7 @@
 /* eslint-disable import/extensions */
 /* eslint-disable class-methods-use-this */
 /* eslint-disable react/prefer-stateless-function */
+/* eslint arrow-parens: 0 */
 import React from 'react';
 import Display from './Display';
 import ButtonPanel from './ButtonPanel';
