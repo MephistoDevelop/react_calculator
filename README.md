@@ -37,8 +37,6 @@ To use this repo on your compuer you first need to run this commands:
 npm install eslint eslint-config-airbnb --save-dev
 
 npx eslint --init
-
-
 ```
 
 ### Deployment
