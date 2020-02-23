@@ -1,5 +1,7 @@
-const Calculate = (calculator, ButtonName) => {
-
+const Calculated = (calculator, ButtonName) => {
+  if (ButtonName === '+/-') {
+    console.log('+/- Pressed');
+  }
 };
 
-export default Calculate;
+export default Calculated;
