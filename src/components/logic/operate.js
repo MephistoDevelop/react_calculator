@@ -5,19 +5,19 @@ import { Big } from 'big.js';
 const Operate = (nOne, nTwo, operation) => {
   let Total = '';
   if (operation === '+') {
-    Total = Big(parseInt(nOne) + parseInt(nTwo));
+    Total = Big(parseFloat(nOne) + parseFloat(nTwo));
   }
   if (operation === '-') {
-    Total = Big(parseInt(nOne) - parseInt(nTwo));
+    Total = Big(parseFloat(nOne) - parseFloat(nTwo));
   }
   if (operation === '/') {
-    Total = Big(parseInt(nOne) / parseInt(nTwo));
+    Total = Big(parseFloat(nOne) / parseFloat(nTwo));
   }
   if (operation === '*') {
-    Total = Big(parseInt(nOne) * parseInt(nTwo));
+    Total = Big(parseFloat(nOne) * parseFloat(nTwo));
   }
   if (operation === '%') {
-    Total = Big(parseInt(nOne) % parseInt(nOne));
+    Total = Big(parseFloat(nOne) % parseFloat(nOne));
   }
   return Total;
 };
