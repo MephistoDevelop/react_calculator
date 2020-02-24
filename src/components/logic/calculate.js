@@ -3,7 +3,6 @@ import Operate from './operate';
 const Calculated = (calculator, ButtonName) => {
   const calculus = calculator;
   if (['1', '2', '3', '4', '5', '6', '7', '8', '9', '0'].includes(ButtonName)) {
-    console.log(`Value: ${calculus.value} Tot: ${calculus.total} Opera: ${calculus.operation}`);
     if (calculus.value !== '' && calculus.operation === '' && calculus.total !== '') {
       calculus.value = '';
       calculus.total = '';
