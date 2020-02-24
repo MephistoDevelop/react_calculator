@@ -7,7 +7,7 @@ const Operate = (nOne, nTwo, operation) => {
   const Ntwo = Big(nTwo);
   let Total = '';
   if (operation === '+') {
-    Total = None + Ntwo;
+    Total = parseFloat(None) + parseFloat(Ntwo);
   }
   if (operation === '-') {
     Total = None - Ntwo;
@@ -21,6 +21,7 @@ const Operate = (nOne, nTwo, operation) => {
   if (operation === '%') {
     Total = None % Ntwo;
   }
+  console.log(`Total: ${Total}`);
   return Total;
 };
 
