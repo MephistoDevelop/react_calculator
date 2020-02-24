@@ -3,10 +3,13 @@ import Operate from './operate';
 const Calculated = (calculator, ButtonName) => {
   const calculus = calculator;
   if (['1', '2', '3', '4', '5', '6', '7', '8', '9', '0'].includes(ButtonName)) {
+    console.log(`Value: ${calculus.value} Total: ${calculus.total}`);
     const number = ButtonName;
     calculus.value += number;
   }
   if (['+', '-', '*', '/', '%'].includes(ButtonName) && calculator.value !== '') {
+    console.log(`Value: ${calculus.value} Total: ${calculus.total}`);
+
     calculus.total = calculus.value;
     calculus.operation = ButtonName;
     calculus.value = '';
@@ -19,14 +22,22 @@ const Calculated = (calculator, ButtonName) => {
   }
   if (ButtonName === 'AC') {
     calculus.value = '';
-    calculus.total = '0';
     calculus.operation = '';
+    calculus.total = '0';
   }
   if (ButtonName === '=' && calculus.total !== '' && calculus.value !== '') {
-    calculus.total = Operate(calculus.total, calculus.value, calculus.operation);
-    calculus.value = '';
-    calculus.operation = '';
+    if (calculus.value === '0' && calculus.operation === '/') {
+      calculus.total = '';
+      calculus.value = '';
+      calculus.operation = 'Error !!!';
+    } else {
+      console.log(`Value: ${calculus.value} Total: ${calculus.total}`);
+      calculus.total = Operate(calculus.total, calculus.value, calculus.operation);
+      calculus.value = calculus.total;
+      calculus.operation = '';
+    }
   }
+
   return calculus;
 };
 
