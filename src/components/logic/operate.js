@@ -4,20 +4,22 @@ import { Big } from 'big.js';
 
 const Operate = (nOne, nTwo, operation) => {
   let Total = '';
+  const None = Big(nOne);
+  const Ntwo = Big(nTwo);
   if (operation === '+') {
-    Total = Big(parseInt(nOne) + parseInt(nTwo));
+    Total = None.plus(Ntwo);
   }
   if (operation === '-') {
-    Total = Big(parseInt(nOne) - parseInt(nTwo));
+    Total = None.minus(Ntwo);
   }
   if (operation === '/') {
-    Total = Big(parseInt(nOne) / parseInt(nTwo));
+    Total = None.div(Ntwo);
   }
   if (operation === '*') {
-    Total = Big(parseInt(nOne) * parseInt(nTwo));
+    Total = None.times(Ntwo);
   }
   if (operation === '%') {
-    Total = Big(parseInt(nOne) % parseInt(nOne));
+    Total = None.mod(Ntwo);
   }
   return Total;
 };
