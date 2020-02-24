@@ -21,7 +21,6 @@ const Operate = (nOne, nTwo, operation) => {
   if (operation === '%') {
     Total = None % Ntwo;
   }
-  console.log(`Total: ${Total}`);
   return Total;
 };
 
