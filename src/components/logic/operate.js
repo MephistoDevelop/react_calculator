@@ -3,21 +3,23 @@
 import { Big } from 'big.js';
 
 const Operate = (nOne, nTwo, operation) => {
+  const None = Big(nOne);
+  const Ntwo = Big(nTwo);
   let Total = '';
   if (operation === '+') {
-    Total = Big(parseInt(nOne) + parseInt(nTwo));
+    Total = None + Ntwo;
   }
   if (operation === '-') {
-    Total = Big(parseInt(nOne) - parseInt(nTwo));
+    Total = None - Ntwo;
   }
   if (operation === '/') {
-    Total = Big(parseInt(nOne) / parseInt(nTwo));
+    Total = None / Ntwo;
   }
   if (operation === '*') {
-    Total = Big(parseInt(nOne) * parseInt(nTwo));
+    Total = None * Ntwo;
   }
   if (operation === '%') {
-    Total = Big(parseInt(nOne) % parseInt(nOne));
+    Total = None % Ntwo;
   }
   return Total;
 };
