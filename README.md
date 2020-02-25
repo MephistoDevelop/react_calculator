@@ -4,7 +4,7 @@
 
 ### Screenshot
 
-![screenshot](./dist/img/desktop.png)
+![screenshot](./Screenshot from 2020-02-25 04-19-41.png)
 
 React calculator project.
 
