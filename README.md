@@ -20,7 +20,7 @@ React calculator project.
 
 ## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://react-calculator2020.herokuapp.com/)
 
 ## Getting Started
 
@@ -37,8 +37,6 @@ To use this repo on your compuer you first need to run this commands:
 npm install eslint eslint-config-airbnb --save-dev
 
 npx eslint --init
-
-
 ```
 
 ### Deployment
@@ -73,6 +71,20 @@ npx eslint --init, with this configuration:
 The config that you've selected requires the following dependencies: ? Would you like to install them now with npm? Yes
 
 after you will need to enter to [Stickler Page](https://stickler-ci.com/) and activate your repository.
+
+**\*\***\*\*\*\***\*\*** Deploy to Heroku with CLI **\*\***\*\*\*\***\*\***
+
+```
+git add .
+git commit -m "Start with create-react-app"
+git push heroku master
+
+you need to change the $BRANCH_NAME, by your working branch.
+
+git push heroku $BRANCH_NAME:master
+
+heroku open
+```
 
 ## Authors
 
