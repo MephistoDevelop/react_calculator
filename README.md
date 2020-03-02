@@ -4,7 +4,7 @@
 
 ### Screenshot
 
-![screenshot](./calculator.png)
+![screenshot](./mock4.png)
 
 React calculator project.
 
