@@ -19,9 +19,9 @@ class ButtonPanel extends React.Component {
     return (
       <div>
         <div id="group-1">
-          <Button name="AC" Color="gray" handleClick={this.handleClick} />
-          <Button name="+/-" Color="gray" handleClick={this.handleClick} />
-          <Button name="%" Color="gray" handleClick={this.handleClick} />
+          <Button name="AC" handleClick={this.handleClick} />
+          <Button name="+/-" handleClick={this.handleClick} />
+          <Button name="%" handleClick={this.handleClick} />
           <Button name="+" handleClick={this.handleClick} />
         </div>
         <div id="group-2">
@@ -43,9 +43,9 @@ class ButtonPanel extends React.Component {
           <Button name="*" handleClick={this.handleClick} />
         </div>
         <div id="group-5">
-          <Button name="0" Color="gray" Width handleClick={this.handleClick} />
+          <Button id="btnzero" name="0" Width handleClick={this.handleClick} />
           <Button name="." Color="gray" handleClick={this.handleClick} />
-          <Button name="=" Color="gray" handleClick={this.handleClick} />
+          <Button name="=" handleClick={this.handleClick} />
         </div>
       </div>
     );

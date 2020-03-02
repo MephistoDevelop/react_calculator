@@ -31,8 +31,11 @@ class App extends React.Component {
     const operator = this.state.operation !== '' ? `${this.state.total}  ${this.state.operation} ${this.state.value}` : displayString;
     return (
       <div id="calculator-container">
-        <Display result={operator} />
-        <ButtonPanel clickHandler={this.handleClick} />
+        <div><h1 id="title">Simple Calculator</h1></div>
+        <div id="component-container">
+          <div id="display-container"><Display result={operator} /></div>
+          <ButtonPanel clickHandler={this.handleClick} />
+        </div>
       </div>
     );
   }

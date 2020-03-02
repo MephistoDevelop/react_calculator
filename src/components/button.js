@@ -11,20 +11,25 @@ const Button = (props) => {
   let styles = { };
 
   if (props.Width) {
-    styles = { backgroundColor: props.Color, width: '50%' };
+    styles = { backgroundColor: props.Color, width: '30%' };
   } else {
-    styles = { backgroundColor: props.Color, width: '25%', heigth: '100px' };
+    styles = { backgroundColor: props.Color, width: '15%', heigth: '100px' };
   }
   const clickHandler = () => {
     handleClick(ButtonName);
   };
+  if (props.name === '0') {
+    return (
+      <input id="btn-zero" type="button" className="button" onClick={clickHandler} style={styles} value={ButtonName} />
+    );
+  }
   return (
     <input type="button" className="button" onClick={clickHandler} style={styles} value={ButtonName} />
   );
 };
 
 Button.defaultProps = {
-  Color: 'Orange',
+  Color: 'white',
   Width: false,
 };
 Button.propTypes = {
